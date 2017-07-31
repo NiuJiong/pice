@@ -8,12 +8,16 @@ $(function(){
 			$(this).find(".mask").removeClass("active");
 		});
 	}
+	
+	
 	if($(window).width()<=768){
-		$(".main ul li span").click(function(){
-			$(this).find(".mask").addClass("active");
+		
+		$(".main span").click(function(){
+			$(this).children().addClass("ractive");
 		});
-		$(".main ul li span").click(function(){
-			$(this).find(".mask").removeClass("active");
+		
+		$(".main .mask").click(function(){
+			$(this).removeClass("ractive");
 		});
 	}
 });
