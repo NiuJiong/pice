@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* reset */
+html, body {font-size:12px;height:100%; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
+body {background:#fff;color:#333;font-size:12px;margin:0 auto;line-height:1.4;font-family:"Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);word-wrap:break-word;word-break:break-all;}
+p {margin:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {display:block;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;margin:0;}
+ul,ol {list-style:none;margin:0;padding:0;}
+textarea {outline:none;resize:vertical;border:none;font-family:inherit;}
+input, button, select {outline:none;background:none;padding:0;margin:0;font-family:inherit;line-height:inherit;border:none;color:inherit;font-size:inherit;}
+select {box-sizing:content-box;}
+img {vertical-align:top;border:0;display:block;}
+a {text-decoration:none;color:inherit;}
+a:hover {text-decoration:none;}
+.clearfix:before, .clearfix:after {content:"";display:table;} .clearfix:after {clear:both;} .clearfix {*zoom:1;}
+table {width:100%;text-align:center;border-collapse:collapse;border:1px solid #ddd;text-align:center;} th,td {border:1px solid #ddd;padding:0;}
+svg {overflow:hidden;vertical-align:middle;}
+select, textarea, button, input[type="button"], input[type="checkbox"], input[type="submit"] {font-size:inherit;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;}/*去除iphone默认样式*/
+input::-moz-placeholder, textarea::-moz-placeholder {color:#aaa;font-family:inherit;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#aaa;font-family:inherit;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color:#aaa;font-family:inherit;}
+input:placeholder, textarea:placeholder {color:#aaa;font-family:inherit;}
+input[type="checkbox"] {vertical-align:middle;display:inline-block;}
+::-webkit-selection {background:#000;color:#fff;}
+::-moz-selection {background:#000;color:#fff;}
+::selection {background:#000;color:#fff;}
+
+

@@ -43,9 +43,13 @@ header{
 	border-bottom: 1px solid #9B9B9B;
 }
 header .logo{
-	padding: 1% 0;
+	
+}
+header .logo img{
+	display: block;
 	width: 300px;
 	margin: 0 auto;
+	padding: 1% 0;
 }
 header ul{
 	
@@ -117,7 +121,13 @@ header ul{
 		position: relative;
 	}
 	header .logo{
+		
+	}
+	header .logo img{
+		display: block;
 		width: 150px;
+		margin: 0 auto;
+		padding: 1% 0;
 	}
 	header ul li:last-child .menu{
 		position: static;
@@ -184,10 +194,26 @@ footer p:last-child a{
 	margin-left: 1rem;
 	height: 2rem;
 	margin-bottom: -0.3rem;
+	position: relative;
 }
-footer p:last-child a img{
+
+
+footer p:last-child a img:nth-child(1){
 	width: 2rem;
+	margin-right: 6rem;
 }
+footer .ertu{
+	position: absolute;
+	width:8rem;
+	height:6rem;
+	right: 0;
+	top:-7rem;
+	display: none;
+}
+footer p:last-child a:hover .ertu{
+	display: block;
+}
+
 @media screen and (max-width: 992px){
 	footer{
 		padding:0.3rem 0;
@@ -209,5 +235,16 @@ footer p:last-child a img{
 	}
 	footer p:nth-child(2){
 		margin-left: 0;
+	}
+}
+@media screen and (max-width: 768px){
+	footer{
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	body{
+		padding-bottom: 105px;
 	}
 }

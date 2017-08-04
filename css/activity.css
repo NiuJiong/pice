@@ -1,0 +1,300 @@
+.main{
+	max-width: 1500px;
+	margin:20px auto;
+}
+img{
+	border: none;
+}
+.main .text{
+	float: left;
+	width: 35%;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+.main .text span::-webkit-scrollbar{
+	width: 5px;
+	/*background: #666666;*/
+}
+.main .text span::-webkit-scrollbar-thumb{
+	background: #999999;
+	border-radius:5px;
+}
+.main .text span::-webkit-scrollbar-button{
+	background: none;
+	height: 9px;
+}
+.main .text p{
+	margin-bottom: 20px;
+	font-size: 1.8rem;
+}
+.main .text span{
+	display: inline-block;
+	text-indent: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0.2rem;
+	font-family: "微软雅黑";
+	color: #555555;
+	max-height: 450px;
+	overflow-y:scroll;
+}
+
+
+
+
+.main .switch{
+	float: right;
+	width: 62%;
+	margin-top:20px;
+	max-height: 456px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.main .switch .one{
+	position: relative;
+	width: 80%;
+}
+
+
+.main .switch .one .shuffling{
+	width: 100%;
+	max-height: 456px;
+	overflow: hidden;
+	transition: all 1s;
+}
+.main .switch .one .shuffling li{
+	height: 100%;
+	width: 100%;
+	float: left;
+	/*opacity: 0;
+	transition: all 2s;*/
+	display: none;
+}
+.main .switch .one .shuffling li.active{
+	/*opacity: 1;*/
+	display: block;
+}
+.main .switch .one .cli{
+	position: absolute;
+	left: 50%;
+	top: 85%;
+	z-index: 6666;
+	transform: translateX(-50%);
+}
+.main .switch .one .cli li{
+	margin: 0 10px;
+	float: left;
+	width:20px;
+	height:20px;
+	border: 5px solid white;
+	cursor: pointer;
+}
+.main .switch .one .cli li.active{
+	background: white;
+}
+.main .switch ol{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	max-height: 456px;
+}
+.main .switch  ol li{
+	height: 50%;
+}
+.main .switch  ol li img{
+	cursor: pointer;
+}
+.main .switch  ol li:nth-child(1) img{
+	margin-top: 30%;
+}
+.main .switch  ol li:nth-child(2) img{
+	margin-top:120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main .switch .two{
+	position: relative;
+	width: 80%;
+	max-height: 456px;
+}
+.main .switch .two .shuffling{
+	width: 100%;
+	max-height: 456px;
+	overflow: hidden;
+}
+.main .switch .two .shuffling li{
+	height: 100%;
+	width: 100%;
+	float: left;
+	/*opacity: 0;
+	transition: all 2s;*/
+	display: none;
+}
+.main .switch .two .shuffling li.active{
+	/*opacity: 1;*/
+	display: block;
+}
+.main .switch .two .cli{
+	position: absolute;
+	left: 50%;
+	top: 85%;
+	z-index: 6666;
+	transform: translateX(-50%);
+}
+.main .switch .two .cli li{
+	margin: 0 10px;
+	float: left;
+	width:20px;
+	height:20px;
+	border: 5px solid white;
+	cursor: pointer;
+}
+.main .switch .two .cli li.active{
+	background: white;
+}
+
+
+
+
+footer{
+	margin-top: 100px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+	.main .text{
+		float: none;
+		width:80%;
+		margin: auto;
+		padding-bottom: 10px;
+		padding-top: 20px;
+	}
+	.main .switch{
+		float: none;
+		width:80%;
+		margin: auto;
+		margin-top:20px;
+		max-height: 456px;
+	}
+	.main .text span{
+		display: inline-block;
+		text-indent: 40px;
+		font-size: 16px;
+		line-height: 40px;
+		letter-spacing: 0.2rem;
+		font-family: "微软雅黑";
+		color: #555555;
+		max-height: 450px;
+		overflow:initial;
+	}
+	footer{
+		position: initial;
+		margin: 0;
+		padding-bottom: 0;
+	}
+	body{
+		padding-bottom: 0;
+	}
+.main .switch .one .cli li{
+	margin: 0 10px;
+	float: left;
+	width:5px;
+	height:5px;
+	border: 5px solid white;
+	cursor: pointer;
+}
+.main .switch .two .cli li{
+	margin: 0 10px;
+	float: left;
+	width:5px;
+	height:5px;
+	border: 5px solid white;
+	cursor: pointer;
+}
+}
+@media screen and (max-width: 768px) {
+	.main .switch{
+		position: relative;
+		width: 80%;
+		height:170px;
+		overflow: hidden;
+	}
+	.main .switch  .shuffling{
+		width: 100%;
+		height: 170px;
+		overflow: hidden;
+		transition: all 1s;
+	}
+	.main .switch  .shuffling li{
+		width: 100%;
+		height: 100%;
+	}
+	.main .switch  .shuffling li img{
+		width: 100%;
+		height: 100%;
+	}
+	.main .switch ol{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		max-height: 170px;
+	}
+	.main .switch  ol li{
+		height: 50%;
+	}
+	.main .switch  ol li img{
+		cursor: pointer;
+	}
+	.main .switch  ol li:nth-child(1) img{
+		margin-top: 80%;
+		width: 30px;
+	}
+	.main .switch  ol li:nth-child(2) img{
+		margin-top:150%;
+		width: 30px;
+	}
+	.main .switch .one .cli li{
+		margin: 0 10px;
+		float: left;
+		width:5px;
+		height:5px;
+		border: 5px solid white;
+		cursor: pointer;
+		display: none;
+	}
+	.main .switch .two .cli li{
+		margin: 0 10px;
+		float: left;
+		width:5px;
+		height:5px;
+		border: 5px solid white;
+		cursor: pointer;
+		display: none;
+	}
+		.main .text span{
+			display: inline-block;
+			text-indent: 40px;
+			font-size: 12px;
+			line-height: 40px;
+			letter-spacing: 0.2rem;
+			font-family: "微软雅黑";
+			color: #555555;
+			max-height: 450px;
+			overflow:initial;
+		}
+}
