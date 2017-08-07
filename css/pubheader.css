@@ -93,6 +93,7 @@ header ul{
 		background: rgba(250,250,250,0.7);
 		padding: 0.5rem 0.2;
 		display: none;
+		z-index: 99999;
 	}
 	header ul li .childenmenu span{
 		display: block;
