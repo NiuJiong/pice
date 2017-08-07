@@ -57,14 +57,15 @@ header ul{
 /*@media screen and (min-width: 768px){ */
 	header ul li{
 		float: left;
-		width: 25%;
-		text-align: right;
+		width:33.33333%;
+		text-align: center;
 	}
-	header ul li .menu .menuone{
-		display:inline-block;
-		padding: 8px 0 15px 0;
-		color: #666666;
-		font-size: 1.2rem;
+	header ul li:nth-child(3){
+		width: 18%;
+	}
+
+	header ul li .menu{
+		width: 100%;
 	}
 	header ul li .menu{
 		position: relative;
@@ -81,19 +82,23 @@ header ul{
 	}
 	
 	header ul li .menu .menuone{
-		display: inline-block;
+		display:inline-block;
 		padding:0.5rem 0.5rem;
 		border: 2px solid rgba(0,0,0,0);
+		text-align: center;
+		color: #666666;
+		font-size: 1.2rem;
 	}
 	header ul li .childenmenu{
 		position: absolute;
-		right:-2rem;
+		left: 50%;
 		width:10rem;
 		text-align: center;
 		background: rgba(250,250,250,0.7);
 		padding: 0.5rem 0.2;
 		display: none;
 		z-index: 99999;
+		transform: translate(-50%);
 	}
 	header ul li .childenmenu span{
 		display: block;
@@ -114,6 +119,10 @@ header ul{
 	}
 	header ul li .menu .childenmenu a:hover{
 		border-bottom: 1px solid #838383;
+	}
+	header ul li:nth-child(4){
+		width: 10%;
+		text-align: left;
 	}
 /*}*/
 
@@ -166,7 +175,7 @@ header ul{
 
 
 footer{
-	max-width: 1200px;
+	max-width: 1300px;
 	margin:auto;
 	margin-top:1rem;
 	margin-bottom:1.5rem;
@@ -201,7 +210,7 @@ footer p:last-child a{
 
 footer p:last-child a img:nth-child(1){
 	width: 2rem;
-	margin-right: 6rem;
+	margin-right:2.5rem;
 }
 footer .ertu{
 	position: absolute;
