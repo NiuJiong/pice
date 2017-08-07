@@ -93,6 +93,7 @@ header .logo,#footer{
 footer{
     max-width: 82%;
     font-size: 1rem;
+    border-top:none;
 }
 footer p:first-child a{
 
