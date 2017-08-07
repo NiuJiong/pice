@@ -30,7 +30,7 @@
 .main ul li span{
 	position: relative;
 	width: 24%;
-	margin-right: 1%;
+	margin-right:0.75%;
 }
 .main ul li span img{
 	display: block;
