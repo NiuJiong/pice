@@ -105,9 +105,9 @@ footer p:last-child a img:nth-child(1){
 footer .ertu {
     position: absolute;
     width: 8rem;
-    height: 6rem;
+    height:7.5rem;
     right: -2rem;
-    top: -4.5rem;
+    top: -8.5rem;
     display: none;
     z-index: 100;
 }

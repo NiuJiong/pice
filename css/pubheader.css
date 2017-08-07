@@ -121,11 +121,17 @@ header ul{
 		border-bottom: 1px solid #838383;
 	}
 	header ul li:nth-child(4){
-		width: 10%;
-		text-align: left;
+		width:13%;
+		text-align: right;
+		
 	}
 /*}*/
-
+@media screen and (min-width: 768px){
+	header ul{
+		max-width: 1800px;
+		margin: auto;
+	}
+}
 @media screen and (max-width: 768px) {
 	header{
 		position: relative;
