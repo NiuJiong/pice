@@ -290,7 +290,6 @@ footer p:last-child a{
 footer p:last-child a img:nth-child(1){
 	width: 2rem;
 	margin-right:2.5rem;
-	border: 1px solid red;
 }
 footer .ertu{
 	position: absolute;
@@ -300,7 +299,6 @@ footer .ertu{
 	right: 0;
 	top:-5rem;
 	display: none;
-	border: 1px solid red;
 }
 footer p:last-child a:hover .ertu{
 	display: block;
