@@ -50,15 +50,21 @@ img{
 	overflow: hidden;
 	position: relative;
 }
-
+.swiper-container{
+	margin-left: 0;
+	transition: all 1s;
+	max-height: 456px;
+}
+.swiper-wrapper img{
+	margin-left: 0;
+}
 
 .main .switch .one{
-	position: relative;
 	width: 80%;
 }
 
 
-.main .switch .one .shuffling{
+/*.main .switch .one .shuffling{
 	width: 100%;
 	max-height: 456px;
 	overflow: hidden;
@@ -68,12 +74,9 @@ img{
 	height: 100%;
 	width: 100%;
 	float: left;
-	/*opacity: 0;
-	transition: all 2s;*/
 	display: none;
 }
 .main .switch .one .shuffling li.active{
-	/*opacity: 1;*/
 	display: block;
 }
 .main .switch .one .cli{
@@ -112,9 +115,28 @@ img{
 }
 .main .switch  ol li:nth-child(2) img{
 	margin-top:120%;
+}*/
+
+.main .switch ol{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	max-height: 456px;
+	width:10%;
 }
-
-
+.main .switch  ol li{
+	height: 50%;
+}
+.main .switch  ol li img{
+	cursor: pointer;
+}
+.main .switch  ol li:nth-child(1) img{
+	margin-top: 50%;
+}
+.main .switch  ol li:nth-child(2) img{
+	margin-top:140%;
+}
 
 
 
@@ -298,3 +320,17 @@ footer{
 			overflow:initial;
 		}
 }
+.swiper-pagination-bullet{
+	background: black;
+	opacity: 0.6;
+	width: 20px;
+	height:20px;
+}
+.swiper-pagination-bullet-active{
+	background: white;
+	opacity: 1;
+}
+/*.swiper-pagination{
+	display: block;
+	z-index: 99999;
+}*/
