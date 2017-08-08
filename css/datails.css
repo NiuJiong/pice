@@ -1,4 +1,46 @@
-
+.main{
+	max-width: 1500px;
+	margin:100px auto;
+}
 .main .left{
 	float: left;
+	width: 50%;
+	border-right:1px solid #BABABA;
+}
+.main .right{
+	float: left;
+	width: 49%;
+	padding: 3% 0;
+}
+.main .right p{
+	color: #707070;
+	font-size: 2rem;
+	margin: 10% 0;
+	margin-left: 20%;
+}
+@media screen and (max-width: 768px) {
+	.main{
+		max-width: 1500px;
+		margin:20px auto;
+	}
+	.main .left{
+		float: none;
+		width:70%;
+		margin: auto;
+		border-right:none;
+	}
+	.main .right{
+		float: none;
+		width:100%;
+		margin: auto;
+		padding:0;
+	}
+	.main .right p{
+		float: left;
+		width: 40%;
+		color: #707070;
+		font-size:14px;
+		margin:10px 0;
+		margin-left:10%;
+	}
 }
