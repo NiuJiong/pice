@@ -96,7 +96,9 @@
 	-webkit-transform:translateY(-50%);
 	color: white;
 }
-
+.main ul li span .mask i a{
+	color: white;
+}
 
 
 
