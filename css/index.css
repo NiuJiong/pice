@@ -1,6 +1,7 @@
 
 header .logo,#footer{
     background-color: #292b47;
+    padding: 1rem 0;
 }
 #banner{
     width: 82%;
@@ -195,6 +196,17 @@ footer .ertu {
         width: 100%;
         line-height: 20px;
     }
+    #footer {
+	    height: 100px;
+	    color: #d4d4d4;
+	}
+	footer{
+	    max-width:100%;
+	    font-size: 1rem;
+	    border-top:none;
+	    background:#292b47 ;
+	    position: inherit;
+	}
 }
 @media screen and  (max-width: 500px){
     #box .hot>div>div h4 {

@@ -124,6 +124,9 @@ header .logo img{
 	}
 /*}*/
 @media screen and (min-width: 992px){
+	header{
+		position: relative;
+	}
 	header ul{
 		width: 50%;
 		margin: auto;
@@ -139,7 +142,7 @@ header .logo img{
 	}
 	header ul li:nth-child(1) .childenmenu{
 		position: absolute;
-		left:-35px;
+		left:-35px;	
 		width:10rem;
 		text-align: center;
 		background: rgba(250,250,250,0.7);
@@ -158,11 +161,11 @@ header .logo img{
 		display: none;
 		z-index: 99999;
 		transform: translate(0);
+		
 	}
 	header .denglu{
 		position: absolute;
-		top: 135px;
-		/*left: 90%;*/
+		top:80%;
 		right: 0;
 		width: 15%;
 		text-align: left;
@@ -213,7 +216,7 @@ header .logo img{
 	}*/
 	header .denglu{
 		position: absolute;
-		top: 10px;
+		top: 30px;
 		/*left: 90%;*/
 		right: 0;
 		width: 15%;
@@ -333,8 +336,11 @@ footer p:last-child a:hover .ertu{
 		left: 0;
 		right: 0;
 		bottom: 0;
+		z-index: 99999;
+		background: white;
+		margin-bottom: 0;
 	}
 	body{
-		padding-bottom: 105px;
+		padding-bottom: 200px;
 	}
 }

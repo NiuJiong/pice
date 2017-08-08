@@ -89,6 +89,40 @@ img{
 		text-align: center;
 	}
 }
+@media screen and (max-width: 768px){
+	.main .text{
+		float: none;
+		width:90%;
+		font-size: 12px;
+		margin: 0 auto;
+		padding-bottom: 10px;
+		padding-top:20px;
+		line-height: 16px;
+	}
+	.main .text span{
+		overflow-y:inherit;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	.ctrl{
+		display: none;
+	}
+	.main .video{
+		float: none;
+		margin-left: 0;
+		width:90%;
+		margin: auto;
+		margin-top:20px;
+		position: relative;
+		text-align: left;
+	}
+	footer{
+		margin-bottom: 0;
+	}
+	body{
+		padding-bottom: 80px;
+	}
+}
 
 
 footer{

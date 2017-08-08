@@ -43,22 +43,42 @@ $(function(){
 
 
 //	上下翻滚
-	$(".switch .clitop").click(function(){
-		var height = $(".swiper-container").height()/2;
-		$(".swiper-container").css({
-			marginTop:-height
+if($(window).width()>992){
+	$(".clitop").click(function(){
+		var height = $(".topmargin").height();
+		$(".topmargin").css({
+				marginTop:-height
 		});
 	});
-	$(".switch .clibottom").click(function(){
-		var height = $(".swiper-container").height()/2;
-		$(".swiper-container").css({
-			marginTop:0
+	$(".clibottom").click(function(){
+		var height = $(".topmargin").height();
+		$(".topmargin").css({
+				marginTop:"0"
 		});
 	});
+}
 
-	
+
+
+
+//	$(window).scroll(function(){
+		if($(window).width()<992){
+			$(".clitop").click(function(){
+				var height = $(".topmargin").offset().top;
+				$(window).scrollTop(0);
+			});
+			$(".clibottom").click(function(){
+				var height = $(".bigbottom").offset().top;
+				$(window).scrollTop(height);
+			});
+		}
+//	});	
 	
 	//	播放器
+	
+
+
+	
 	var ctrl = document.querySelector(".ctrl");
 	
 	ctrl.onclick = function(e){
@@ -71,6 +91,7 @@ $(function(){
         ctrlImg.src = 'img/play.png';
       }
     }
+
 
 
 });
