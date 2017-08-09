@@ -43,7 +43,7 @@ header{
 	border-bottom: 1px solid #9B9B9B;
 }
 header .logo{
-	margin: 1rem 0;
+	 padding: 1rem 0;
 }
 header .logo img{
 	display: block;
